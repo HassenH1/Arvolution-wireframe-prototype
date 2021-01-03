@@ -3,7 +3,7 @@
 ## Available Scripts
 
 In the project directory, you can run:\
-When you clone this repo, Do not forget to run npm install.
+When you clone this repo, Do not forget to run `npm install`.
 
 ### `npm start`
 
