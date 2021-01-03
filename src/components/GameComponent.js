@@ -18,8 +18,8 @@ function GameComponent() {
 
   return (
     <div className="container text-center vh-100 d-flex align-items-center justify-content-center flex-column">
-      <div className="border w-25 p-3 h-50 ">
-        <div className="d-flex h-100 flex-column justify-content-around col-xs-4">
+      <div className="border w-25 p-3 h-50 col-xs-2">
+        <div className="d-flex h-100 flex-column justify-content-around">
           <div className="d-flex justify-content-between w-100">
             <p>{players.playerOne.username}</p>
             <button
