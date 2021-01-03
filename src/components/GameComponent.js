@@ -25,6 +25,7 @@ function GameComponent() {
             <button
               type="button"
               className="btn btn-outline-primary btn-sm"
+              data-testid="add-btn"
               onClick={() =>
                 setPlayers((prevState) => {
                   return {
@@ -43,7 +44,7 @@ function GameComponent() {
 
           <div className="text-center d-flex justify-content-around">
             <p>Wins:</p>
-            <span>{players.playerOne.win}</span>
+            <span data-testid="player-score">{players.playerOne.win}</span>
           </div>
 
           <div className="d-flex justify-content-between w-100">
