@@ -2,20 +2,20 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import ContextAPIProvider from "./context/ContextAPI";
+import Game from "./Game";
+import ContextAPIProvider from "../context/ContextAPI";
 
-describe("App Component", () => {
+describe("Game Page test Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <Router>
-        <ContextAPIProvider>
-          <App />
-        </ContextAPIProvider>
-      </Router>,
+      <ContextAPIProvider>
+        <Router>
+          <Game />
+        </Router>
+      </ContextAPIProvider>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);
   });
-}); //end of Describe
+});

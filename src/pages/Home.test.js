@@ -2,20 +2,20 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import ContextAPIProvider from "./context/ContextAPI";
+import Home from "./Home";
+import ContextAPIProvider from "../context/ContextAPI";
 
-describe("App Component", () => {
+describe("Home Component Test", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <Router>
-        <ContextAPIProvider>
-          <App />
-        </ContextAPIProvider>
-      </Router>,
+      <ContextAPIProvider>
+        <Router>
+          <Home />
+        </Router>
+      </ContextAPIProvider>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);
   });
-}); //end of Describe
+});
